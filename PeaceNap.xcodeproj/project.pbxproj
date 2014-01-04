@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0807FD4D1733F71500AD32C7 /* SharedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0807FD4C1733F71500AD32C7 /* SharedData.m */; };
+		0807FD501733F88400AD32C7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0807FD4F1733F88400AD32C7 /* SecondViewController.m */; };
+		0807FD52173412D200AD32C7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0807FD51173412D100AD32C7 /* AudioToolbox.framework */; };
+		0807FD541734174F00AD32C7 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0807FD531734174F00AD32C7 /* alarm.mp3 */; };
+		0807FD561734178300AD32C7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0807FD551734178300AD32C7 /* AVFoundation.framework */; };
+		0834C97C173FC7A300CBD007 /* peaceNapConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0834C97B173FC7A300CBD007 /* peaceNapConnection.m */; };
+		0847508A1727C6C7004ABE0B /* NapCreateAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 084750891727C6C7004ABE0B /* NapCreateAccountView.m */; };
+		087A00C51743919700848FC4 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 087A00C41743919700848FC4 /* icon114.png */; };
+		087A00C71743919900848FC4 /* icon54.png in Resources */ = {isa = PBXBuildFile; fileRef = 087A00C61743919900848FC4 /* icon54.png */; };
+		08A1CE3C172914E600C17DA0 /* NapLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A1CE3B172914E600C17DA0 /* NapLoginController.m */; };
+		08A1CE3F17291BF900C17DA0 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A1CE3E17291BF900C17DA0 /* NSString+MD5.m */; };
+		08A1CE4217294C1200C17DA0 /* NapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A1CE4117294C1200C17DA0 /* NapTabViewController.m */; };
+		08B2AB4F172650760028E8A9 /* NapFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2AB4E172650760028E8A9 /* NapFriendViewController.m */; };
+		08B2AB52172650C60028E8A9 /* NapBatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2AB51172650C60028E8A9 /* NapBatchViewController.m */; };
+		08B2AB5817265A980028E8A9 /* NapMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2AB5717265A980028E8A9 /* NapMainViewController.m */; };
 		08FCEB261721437B005C06ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCEB251721437B005C06ED /* UIKit.framework */; };
 		08FCEB281721437B005C06ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCEB271721437B005C06ED /* Foundation.framework */; };
 		08FCEB2A1721437B005C06ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCEB291721437B005C06ED /* CoreGraphics.framework */; };
@@ -18,10 +33,8 @@
 		08FCEB3C1721437B005C06ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB3B1721437B005C06ED /* Default-568h@2x.png */; };
 		08FCEB3F1721437B005C06ED /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB3D1721437B005C06ED /* MainStoryboard_iPhone.storyboard */; };
 		08FCEB421721437B005C06ED /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB401721437B005C06ED /* MainStoryboard_iPad.storyboard */; };
-		08FCEB451721437B005C06ED /* NapFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCEB441721437B005C06ED /* NapFirstViewController.m */; };
 		08FCEB471721437B005C06ED /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB461721437B005C06ED /* first.png */; };
 		08FCEB491721437B005C06ED /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB481721437B005C06ED /* first@2x.png */; };
-		08FCEB4C1721437B005C06ED /* NapSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FCEB4B1721437B005C06ED /* NapSecondViewController.m */; };
 		08FCEB4E1721437B005C06ED /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB4D1721437B005C06ED /* second.png */; };
 		08FCEB501721437B005C06ED /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08FCEB4F1721437B005C06ED /* second@2x.png */; };
 		08FCEB581721437B005C06ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FCEB571721437B005C06ED /* SenTestingKit.framework */; };
@@ -42,6 +55,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0807FD4B1733F71500AD32C7 /* SharedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedData.h; sourceTree = "<group>"; };
+		0807FD4C1733F71500AD32C7 /* SharedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedData.m; sourceTree = "<group>"; };
+		0807FD4E1733F88400AD32C7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0807FD4F1733F88400AD32C7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0807FD51173412D100AD32C7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0807FD531734174F00AD32C7 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = SOURCE_ROOT; };
+		0807FD551734178300AD32C7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0834C97A173FC7A300CBD007 /* peaceNapConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = peaceNapConnection.h; sourceTree = "<group>"; };
+		0834C97B173FC7A300CBD007 /* peaceNapConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = peaceNapConnection.m; sourceTree = "<group>"; };
+		084750881727C6C7004ABE0B /* NapCreateAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NapCreateAccountView.h; path = PeaceNap/NapCreateAccountView.h; sourceTree = "<group>"; };
+		084750891727C6C7004ABE0B /* NapCreateAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NapCreateAccountView.m; path = PeaceNap/NapCreateAccountView.m; sourceTree = "<group>"; };
+		087A00C41743919700848FC4 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		087A00C61743919900848FC4 /* icon54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon54.png; sourceTree = "<group>"; };
+		08A1CE3A172914E600C17DA0 /* NapLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapLoginController.h; sourceTree = "<group>"; };
+		08A1CE3B172914E600C17DA0 /* NapLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapLoginController.m; sourceTree = "<group>"; };
+		08A1CE3D17291BF900C17DA0 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		08A1CE3E17291BF900C17DA0 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		08A1CE4017294C1200C17DA0 /* NapTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapTabViewController.h; sourceTree = "<group>"; };
+		08A1CE4117294C1200C17DA0 /* NapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapTabViewController.m; sourceTree = "<group>"; };
+		08B2AB4D172650760028E8A9 /* NapFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapFriendViewController.h; sourceTree = "<group>"; };
+		08B2AB4E172650760028E8A9 /* NapFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapFriendViewController.m; sourceTree = "<group>"; };
+		08B2AB50172650C60028E8A9 /* NapBatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapBatchViewController.h; sourceTree = "<group>"; };
+		08B2AB51172650C60028E8A9 /* NapBatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapBatchViewController.m; sourceTree = "<group>"; };
+		08B2AB5617265A980028E8A9 /* NapMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NapMainViewController.h; path = ../NapMainViewController.h; sourceTree = "<group>"; };
+		08B2AB5717265A980028E8A9 /* NapMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NapMainViewController.m; path = ../NapMainViewController.m; sourceTree = "<group>"; };
 		08FCEB221721437B005C06ED /* PeaceNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FCEB251721437B005C06ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		08FCEB271721437B005C06ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,12 +95,8 @@
 		08FCEB3B1721437B005C06ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		08FCEB3E1721437B005C06ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		08FCEB411721437B005C06ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		08FCEB431721437B005C06ED /* NapFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NapFirstViewController.h; sourceTree = "<group>"; };
-		08FCEB441721437B005C06ED /* NapFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NapFirstViewController.m; sourceTree = "<group>"; };
 		08FCEB461721437B005C06ED /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		08FCEB481721437B005C06ED /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		08FCEB4A1721437B005C06ED /* NapSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NapSecondViewController.h; sourceTree = "<group>"; };
-		08FCEB4B1721437B005C06ED /* NapSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NapSecondViewController.m; sourceTree = "<group>"; };
 		08FCEB4D1721437B005C06ED /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		08FCEB4F1721437B005C06ED /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		08FCEB561721437B005C06ED /* PeaceNapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaceNapTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0807FD561734178300AD32C7 /* AVFoundation.framework in Frameworks */,
+				0807FD52173412D200AD32C7 /* AudioToolbox.framework in Frameworks */,
 				08FCEB261721437B005C06ED /* UIKit.framework in Frameworks */,
 				08FCEB281721437B005C06ED /* Foundation.framework in Frameworks */,
 				08FCEB2A1721437B005C06ED /* CoreGraphics.framework in Frameworks */,
@@ -97,9 +133,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0807FD491733F6B600AD32C7 /* supportClass */ = {
+			isa = PBXGroup;
+			children = (
+				0807FD4B1733F71500AD32C7 /* SharedData.h */,
+				0807FD4C1733F71500AD32C7 /* SharedData.m */,
+				0834C97A173FC7A300CBD007 /* peaceNapConnection.h */,
+				0834C97B173FC7A300CBD007 /* peaceNapConnection.m */,
+			);
+			name = supportClass;
+			sourceTree = "<group>";
+		};
+		0807FD4A1733F6D300AD32C7 /* sectionOfNap */ = {
+			isa = PBXGroup;
+			children = (
+				0807FD531734174F00AD32C7 /* alarm.mp3 */,
+				0807FD4E1733F88400AD32C7 /* SecondViewController.h */,
+				0807FD4F1733F88400AD32C7 /* SecondViewController.m */,
+				08B2AB5617265A980028E8A9 /* NapMainViewController.h */,
+				08B2AB5717265A980028E8A9 /* NapMainViewController.m */,
+			);
+			name = sectionOfNap;
+			sourceTree = "<group>";
+		};
+		08A1CE391727E31B00C17DA0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				084750881727C6C7004ABE0B /* NapCreateAccountView.h */,
+				084750891727C6C7004ABE0B /* NapCreateAccountView.m */,
+				08A1CE3A172914E600C17DA0 /* NapLoginController.h */,
+				08A1CE3B172914E600C17DA0 /* NapLoginController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
 		08FCEB191721437B005C06ED = {
 			isa = PBXGroup;
 			children = (
+				087A00C61743919900848FC4 /* icon54.png */,
+				087A00C41743919700848FC4 /* icon114.png */,
+				08A1CE391727E31B00C17DA0 /* Account */,
 				08FCEB2B1721437B005C06ED /* PeaceNap */,
 				08FCEB5D1721437B005C06ED /* PeaceNapTests */,
 				08FCEB241721437B005C06ED /* Frameworks */,
@@ -119,6 +192,8 @@
 		08FCEB241721437B005C06ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0807FD551734178300AD32C7 /* AVFoundation.framework */,
+				0807FD51173412D100AD32C7 /* AudioToolbox.framework */,
 				08FCEB251721437B005C06ED /* UIKit.framework */,
 				08FCEB271721437B005C06ED /* Foundation.framework */,
 				08FCEB291721437B005C06ED /* CoreGraphics.framework */,
@@ -130,16 +205,20 @@
 		08FCEB2B1721437B005C06ED /* PeaceNap */ = {
 			isa = PBXGroup;
 			children = (
+				0807FD4A1733F6D300AD32C7 /* sectionOfNap */,
+				0807FD491733F6B600AD32C7 /* supportClass */,
 				08FCEB341721437B005C06ED /* NapAppDelegate.h */,
 				08FCEB351721437B005C06ED /* NapAppDelegate.m */,
 				08FCEB3D1721437B005C06ED /* MainStoryboard_iPhone.storyboard */,
 				08FCEB401721437B005C06ED /* MainStoryboard_iPad.storyboard */,
-				08FCEB431721437B005C06ED /* NapFirstViewController.h */,
-				08FCEB441721437B005C06ED /* NapFirstViewController.m */,
+				08B2AB4D172650760028E8A9 /* NapFriendViewController.h */,
+				08B2AB4E172650760028E8A9 /* NapFriendViewController.m */,
+				08B2AB50172650C60028E8A9 /* NapBatchViewController.h */,
+				08B2AB51172650C60028E8A9 /* NapBatchViewController.m */,
+				08A1CE4017294C1200C17DA0 /* NapTabViewController.h */,
+				08A1CE4117294C1200C17DA0 /* NapTabViewController.m */,
 				08FCEB461721437B005C06ED /* first.png */,
 				08FCEB481721437B005C06ED /* first@2x.png */,
-				08FCEB4A1721437B005C06ED /* NapSecondViewController.h */,
-				08FCEB4B1721437B005C06ED /* NapSecondViewController.m */,
 				08FCEB4D1721437B005C06ED /* second.png */,
 				08FCEB4F1721437B005C06ED /* second@2x.png */,
 				08FCEB2C1721437B005C06ED /* Supporting Files */,
@@ -157,6 +236,8 @@
 				08FCEB371721437B005C06ED /* Default.png */,
 				08FCEB391721437B005C06ED /* Default@2x.png */,
 				08FCEB3B1721437B005C06ED /* Default-568h@2x.png */,
+				08A1CE3D17291BF900C17DA0 /* NSString+MD5.h */,
+				08A1CE3E17291BF900C17DA0 /* NSString+MD5.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,6 +343,9 @@
 				08FCEB491721437B005C06ED /* first@2x.png in Resources */,
 				08FCEB4E1721437B005C06ED /* second.png in Resources */,
 				08FCEB501721437B005C06ED /* second@2x.png in Resources */,
+				0807FD541734174F00AD32C7 /* alarm.mp3 in Resources */,
+				087A00C51743919700848FC4 /* icon114.png in Resources */,
+				087A00C71743919900848FC4 /* icon54.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +382,16 @@
 			files = (
 				08FCEB321721437B005C06ED /* main.m in Sources */,
 				08FCEB361721437B005C06ED /* NapAppDelegate.m in Sources */,
-				08FCEB451721437B005C06ED /* NapFirstViewController.m in Sources */,
-				08FCEB4C1721437B005C06ED /* NapSecondViewController.m in Sources */,
+				08B2AB4F172650760028E8A9 /* NapFriendViewController.m in Sources */,
+				08B2AB52172650C60028E8A9 /* NapBatchViewController.m in Sources */,
+				08B2AB5817265A980028E8A9 /* NapMainViewController.m in Sources */,
+				0847508A1727C6C7004ABE0B /* NapCreateAccountView.m in Sources */,
+				08A1CE3C172914E600C17DA0 /* NapLoginController.m in Sources */,
+				08A1CE3F17291BF900C17DA0 /* NSString+MD5.m in Sources */,
+				08A1CE4217294C1200C17DA0 /* NapTabViewController.m in Sources */,
+				0807FD4D1733F71500AD32C7 /* SharedData.m in Sources */,
+				0807FD501733F88400AD32C7 /* SecondViewController.m in Sources */,
+				0834C97C173FC7A300CBD007 /* peaceNapConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +582,7 @@
 				08FCEB6A1721437B005C06ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08FCEB6B1721437B005C06ED /* Build configuration list for PBXNativeTarget "PeaceNapTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +591,7 @@
 				08FCEB6D1721437B005C06ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

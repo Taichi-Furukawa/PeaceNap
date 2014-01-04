@@ -7,15 +7,48 @@
 //
 
 #import "NapAppDelegate.h"
+#import "peaceNapConnection.h"
 
 @implementation NapAppDelegate
-
+@synthesize window,deviceToken;
+BOOL login;
+BOOL session=NO;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSUserDefaults *user_def = [NSUserDefaults standardUserDefaults];
+    login=[user_def boolForKey:@"LoginState"];
+    if (login==NO) {
+        NapLoginController *move=[[NapLoginController alloc]init];
+        UIStoryboard *storyboad = [[[self window]rootViewController]storyboard];
+        move = [storyboad instantiateViewControllerWithIdentifier:@"NapLoginController"];
+        self.window.rootViewController = move;
+        
+    }else{
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound| UIRemoteNotificationTypeAlert)];
+            peaceNapConnection *session=[peaceNapConnection instance];
+            [session sessionCheck];
+    }
     return YES;
 }
-							
+
+- (void)application:(UIApplication*)app didFailToRegisterForRemoteNotificationsWithError:(NSError*)err{
+	NSLog(@"Errorinregistration.Error:%@",err);
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    NSString *Token = [[[[devToken description] stringByReplacingOccurrencesOfString:@"<"withString:@""]
+                              stringByReplacingOccurrencesOfString:@">" withString:@""]
+                             stringByReplacingOccurrencesOfString: @" " withString: @""];
+    deviceToken=Token;
+    NSLog(@"deletoken=%@",deviceToken);
+    
+    peaceNapConnection *sendtoken=[peaceNapConnection instance];
+    [sendtoken send_DeviceToken:deviceToken];
+
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -27,6 +60,7 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
+
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {

@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface NapAppDelegate : UIResponder <UIApplicationDelegate>
+#import "NapBatchViewController.h"
+#import "NapFriendViewController.h"
+#import "NapMainViewController.h"
+#import "NapLoginController.h"
+#import "NapTabViewController.h"
+#import "NSString+MD5.h"
+#import "SharedData.h"
+#import <AudioToolbox/AudioServices.h>
+#import <AVFoundation/AVFoundation.h>
+@interface NapAppDelegate : UIResponder <UIApplicationDelegate>{
+    //NSString *deviceToken;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (assign,nonatomic) NSString *deviceToken;
 
 @end
